@@ -1,9 +1,19 @@
-import junit.framework.*;
+package VideoStore;
+
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class VideoStoreTest {
 	private Statement statement;
 	private final double DELTA = .001;
+	private Movie newReleaseMovie1;
+	private Movie newReleaseMovie2;
+	private Movie childrensMovie;
+	private Movie regular1;
+	private Movie regular2;
+	private Movie regular3;
 
 	@Before
 	public void setUp() {
